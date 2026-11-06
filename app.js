@@ -1,0 +1,11 @@
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+function selectTab(id, focus=false) {
+ const selected = id === 'sports' ? 'sports' : 'academic';
+ tabs.forEach(tab => { const active = tab.id === `tab-${selected}`; tab.setAttribute('aria-selected', String(active)); tab.tabIndex=active?0:-1; document.getElementById(tab.getAttribute('aria-controls')).hidden=!active; if(active&&focus)tab.focus(); });
+ document.querySelectorAll('video').forEach(video=>video.pause());
+}
+tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>{const id=tab.getAttribute('aria-controls');history.replaceState(null,'',`#${id}`);selectTab(id)});tab.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+1)%tabs.length;tabs[next].click();tabs[next].focus();}})});
+window.addEventListener('hashchange',()=>selectTab(location.hash.slice(1)));selectTab(location.hash.slice(1));
+const container=document.getElementById('seasons');
+window.seasons.forEach(season=>{const d=document.createElement('details');d.className='year';const s=document.createElement('summary');const y=document.createElement('span');y.className='year-number';y.textContent=season.year;const t=document.createElement('span');t.className='year-title';t.textContent=season.title;const plus=document.createElement('span');plus.className='plus';plus.setAttribute('aria-hidden','true');s.append(y,t,plus);const body=document.createElement('div');body.className='year-body';const badge=document.createElement('span');badge.className='badge';badge.textContent=season.status;body.append(badge);if(season.story){const p=document.createElement('p');p.textContent=season.story;body.append(p)}if(season.results.length){const list=document.createElement('ul');season.results.forEach(result=>{const li=document.createElement('li');li.textContent=result;list.append(li)});body.append(list)}const pending=document.createElement('p');pending.className='pending';pending.textContent=season.pending;body.append(pending);d.append(s,body);container.append(d)});
+document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(!d.open)d.querySelectorAll('video').forEach(v=>v.pause())}));
