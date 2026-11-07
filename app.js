@@ -21,7 +21,7 @@ function seasonGallery(images) {
   const link = document.createElement('a');
   link.href = photo.src;
   const img = document.createElement('img');
-  img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.decoding = 'async';
+  img.src = photo.src; img.alt = photo.alt; if (photo.portrait) img.className = 'portrait'; img.loading = 'lazy'; img.decoding = 'async';
   link.append(img);
   const caption = textElement('figcaption', photo.caption);
   if (photo.credit) {
@@ -51,6 +51,11 @@ window.seasons.forEach(season => {
   section.append(textElement('h3', chapter.title));
   chapter.paragraphs.forEach(paragraph => section.append(textElement('p', paragraph)));
   if (chapter.gallery) section.append(seasonGallery(chapter.gallery));
+  (chapter.sources || []).forEach(source => {
+   const citation = textElement('a', source.label, 'photo-credit');
+   citation.href = source.url; citation.target = '_blank'; citation.rel = 'noopener noreferrer';
+   section.append(citation);
+  });
   body.append(section);
  });
  if (season.pending) body.append(textElement('p', season.pending, 'pending'));

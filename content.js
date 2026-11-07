@@ -111,14 +111,101 @@ window.seasons = [
   },
   {
     "year": 2025,
-    "title": "A title, a tour win, a new league",
-    "status": "Highlights from the dossier & CV",
+    "title": "A breakthrough season, built together",
+    "status": "Partnership, belief and new opportunities",
     "results": [
+      "1st · A1 tour stop, Lucerne — with Yann Bortoluzzi",
       "U23 Swiss champion — with Lukas Wymann",
-      "Tour victory in Luzern — with Yann Bortoluzzi",
-      "Promotion to NLB in indoor volleyball"
+      "Qualified for the Elite Swiss Championships — with Lucien Gut",
+      "Invitation to the Swiss Volley national junior team",
+      "Promotion to NLB — indoor volleyball with BTV Aarau"
     ],
-    "pending": "Personal season story and learnings to follow."
+    "chapters": [
+      {
+        "title": "Finding the right people",
+        "paragraphs": [
+          "My second season with Lucien Gut began with a training environment that helped me take a real step forward. Lucien brought me into a strong group where I learned a great deal from the players around me. Keeping up with them pushed me to improve every session.",
+          "We also organised a coach for the two of us, giving us one dedicated training session each week. We played plenty of A3 tournaments and earned a third-place finish together. Alongside our partnership, I entered a few events with other players and picked up several A3 wins. Gradually, the work started to show in my results."
+        ],
+        "gallery": [
+          {
+            "src": "assets/season-2025-serve.webp",
+            "alt": "Simon preparing to serve on the beach volleyball court",
+            "caption": "Building confidence, one tournament at a time",
+            "portrait": false
+          }
+        ]
+      },
+      {
+        "title": "An unexpected win in Lucerne",
+        "paragraphs": [
+          "That progress opened the door to an A1 tour stop in Lucerne with Yann Bortoluzzi. We qualified and, against all expectations, went on to win the tournament. Along the way, we beat a Swiss Volley team and the Polish wildcard team featuring Piotr Kantor, the 2013 U22 European champion with Bartosz Łosiak.",
+          "Winning at that level was a turning point. It led to an invitation to join the Swiss Volley national junior team and made a future in high-performance beach volleyball feel much more tangible."
+        ],
+        "sources": [
+          {
+            "label": "Kantor’s 2013 U22 European title · CEV",
+            "url": "https://www-old.cev.eu/BeachVolley-Area/CompetitionNews.aspx?ID=638&NewsID=15147"
+          }
+        ],
+        "gallery": [
+          {
+            "src": "assets/season-2025-lucerne.webp",
+            "alt": "Two beach volleyball teammates smiling after a tournament",
+            "caption": "A breakthrough with Yann Bortoluzzi · Lucerne",
+            "portrait": false
+          },
+          {
+            "src": "assets/season-2025-celebration.webp",
+            "alt": "Teammates celebrating in front of the crowd",
+            "caption": "A result we had hardly dared to imagine",
+            "portrait": false
+          }
+        ]
+      },
+      {
+        "title": "Swiss U23 champions",
+        "paragraphs": [
+          "After the A1 victory, another highlight followed: winning the U23 Swiss Championships with Lukas Wymann. It was a proud moment in a season that kept opening new doors."
+        ],
+        "gallery": [
+          {
+            "src": "assets/season-2025-u23.webp",
+            "alt": "Two U23 Swiss champions wearing gold medals on the podium",
+            "caption": "U23 Swiss champions · with Lukas Wymann",
+            "portrait": true
+          }
+        ]
+      },
+      {
+        "title": "Finishing what we started",
+        "paragraphs": [
+          "The win in Lucerne also left me with a decision: play the Swiss Championship qualification with Yann, or finish the season with Lucien. I chose to stay with Lucien and see our season through together.",
+          "On a cold, rainy qualification day, we fought for every point and earned our place at the Swiss Championships. Sharing that moment with Lucien and our proud coach, Agris Leitis, made it especially meaningful."
+        ],
+        "gallery": [
+          {
+            "src": "assets/season-2025-qualification.webp",
+            "alt": "Two players and their coach smiling outdoors after a rainy day",
+            "caption": "Qualified together · with Lucien Gut and coach Agris Leitis",
+            "portrait": true
+          }
+        ]
+      },
+      {
+        "title": "A reward on the Bundesplatz",
+        "paragraphs": [
+          "Playing on Bern’s Bundesplatz was a wonderful way to finish the season and a reward for all the work we had put in. We did not manage to win a match, but we enjoyed our time on court and had a lot of fun competing on that stage.",
+          "It marked the end of a great chapter with Lucien as my teammate. I was grateful for the training group he had introduced me to, the progress we had made and the experiences we had shared. The next chapter would be with the national junior team."
+        ]
+      },
+      {
+        "title": "A milestone indoors, too",
+        "paragraphs": [
+          "There was also something to celebrate away from the sand: with BTV Aarau, we earned promotion to the NLB after a long period in the 1st League. It rounded off a year of progress, memorable team moments and new opportunities."
+        ]
+      }
+    ]
   },
   {
     "year": 2024,
