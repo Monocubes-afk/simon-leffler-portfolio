@@ -209,12 +209,49 @@ window.seasons = [
   },
   {
     "year": 2024,
-    "title": "U23 Swiss champion",
-    "status": "Highlight from the sponsoring dossier",
+    "title": "The season it all began",
+    "status": "First steps, shared progress and a Swiss title",
     "results": [
-      "U23 Swiss champion — with Lukas Wymann"
+      "U23 Swiss champion — with Lukas Wymann",
+      "4th · A2 tournament, Baden — with Lucien Gut",
+      "B1 tournament wins — with Lucien Gut",
+      "Narrowly missed NLB promotion — indoor volleyball with BTV Aarau"
     ],
-    "pending": "Personal season story, photographs and learnings to follow."
+    "chapters": [
+      {
+        "title": "Learning together",
+        "paragraphs": [
+          "2024 was the year I really began to pursue beach volleyball. Playing alongside Lucien Gut, I joined a great training group where I could learn a lot from the players around me. Their experience and the time we spent training together helped me develop my game.",
+          "We mainly competed in B1 tournaments and managed to win a couple of them. We also began entering A3 events, gradually gaining experience at a higher level."
+        ]
+      },
+      {
+        "title": "A surprise in Baden",
+        "paragraphs": [
+          "The highlight of our season together came at an A2 tournament in Baden. Against the odds, we finished fourth—a result that showed us what we were capable of and gave us plenty of motivation to keep improving."
+        ]
+      },
+      {
+        "title": "U23 Swiss champions",
+        "paragraphs": [
+          "The season flew by, and another special moment followed: winning the U23 Swiss Championships with Lukas Wymann. It was a memorable way to round off a year in which beach volleyball had become a much bigger part of my life."
+        ],
+        "gallery": [
+          {
+            "src": "assets/season-2024-u23.webp",
+            "alt": "Two U23 Swiss champions wearing gold medals on the first-place podium",
+            "caption": "U23 Swiss champions 2024 · with Lukas Wymann",
+            "portrait": true
+          }
+        ]
+      },
+      {
+        "title": "Close to promotion indoors",
+        "paragraphs": [
+          "Alongside the beach season, I played in the 1st League with BTV Aarau. We came close to earning promotion to the NLB, but narrowly missed out. It left us with a clear goal to work towards in the following season."
+        ]
+      }
+    ]
   },
   {
     "year": 2023,
