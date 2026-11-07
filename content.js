@@ -255,9 +255,28 @@ window.seasons = [
   },
   {
     "year": 2023,
-    "title": "The story so far",
-    "status": "Season archive",
+    "title": "The story so far · starting at eighteen",
+    "status": "Up to 2023",
     "results": [],
-    "pending": "Ready for your memories, tournaments and learnings from this year."
+    "chapters": [
+      {
+        "title": "Starting from the bottom",
+        "paragraphs": [
+          "I started playing volleyball at eighteen—relatively late for the sport. My first team played in the 5th League, the lowest division in Switzerland. We lost almost every match, but I was learning and wanted to keep improving."
+        ]
+      },
+      {
+        "title": "Finding my place in Aarau",
+        "paragraphs": [
+          "I progressed quickly to the 2nd League in Aarau, where I earned a regular place in the team. Moving on to the 1st League deepened my enthusiasm for volleyball: I loved the challenge of getting better and seeing the work pay off on court."
+        ]
+      },
+      {
+        "title": "The next step",
+        "paragraphs": [
+          "I also had the opportunity to play in the Swiss junior championships with Schönenwerd. From those difficult early matches to competing at a higher level, these years laid the foundations for everything that followed—and for the next chapter on the sand."
+        ]
+      }
+    ]
   }
 ];
