@@ -1,0 +1,163 @@
+:root {
+  --paper: #f2f1eb;
+  --ink: #17332b;
+  --ink-soft: #476056;
+  --line: #cbd0c6;
+  --chalk: #f7f6f1;
+  --lime: #c9e76a;
+  --sand: #d6b979;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+body.menu-open { overflow: hidden; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+
+.site-header, main, footer { max-width: 1440px; margin: 0 auto; padding-left: 6%; padding-right: 6%; }
+.site-header { min-height: 96px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); gap: 24px; }
+.wordmark { text-decoration: none; font-size: 17px; font-weight: 800; letter-spacing: .05em; line-height: 1.05; white-space: nowrap; }
+.wordmark span { display: block; margin-top: 5px; color: var(--ink-soft); font-size: 9px; letter-spacing: .17em; font-weight: 500; }
+nav { display: flex; align-items: center; gap: clamp(16px, 2vw, 32px); }
+nav a { text-decoration: none; font-size: 12px; transition: opacity .18s ease; }
+nav a:hover, .text-link:hover, footer a:hover { opacity: .58; }
+.nav-cta { border: 1px solid var(--ink); padding: 9px 13px; }
+.menu-toggle { display: none; border: 0; background: none; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.menu-toggle span { font-size: 18px; margin-left: 6px; vertical-align: -1px; }
+
+.hero { display: grid; grid-template-columns: minmax(280px, .95fr) minmax(360px, 1.05fr); gap: clamp(36px, 6vw, 100px); padding: 66px 0 86px; align-items: center; }
+.eyebrow { margin: 0; color: var(--ink-soft); font-size: 10px; letter-spacing: .14em; font-weight: 700; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { letter-spacing: -.055em; font-weight: 500; line-height: 1.03; }
+h1 { margin: 22px 0; font-size: clamp(48px, 6vw, 86px); }
+h2 { margin: 18px 0 0; font-size: clamp(38px, 4.4vw, 65px); }
+h3 { font-size: 26px; }
+em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.lead { max-width: 490px; color: var(--ink-soft); font-size: 16px; }
+.button-row { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 29px; }
+.button { display: inline-block; padding: 12px 16px; text-decoration: none; font-size: 12px; transition: background .18s ease, color .18s ease; }
+.button-dark { background: var(--ink); border: 1px solid var(--ink); color: var(--chalk); }
+.button-dark:hover { background: transparent; color: var(--ink); }
+.button-light { border: 1px solid var(--chalk); color: var(--chalk); }
+.button-light:hover { background: var(--chalk); color: var(--ink); }
+.text-link { color: var(--ink); font-size: 12px; text-underline-offset: 5px; }
+.hero-image { margin: 0; overflow: hidden; background: #203229; }
+.hero-image img { width: 100%; height: min(48vw, 570px); min-height: 400px; object-fit: cover; object-position: 48% center; }
+figcaption { padding: 13px 16px; color: var(--chalk); font-size: 9px; letter-spacing: .15em; border-top: 1px solid rgb(255 255 255 / .25); }
+
+.statement { display: flex; justify-content: space-between; gap: 25px; padding: 34px 0 83px; border-top: 1px solid var(--ink); align-items: end; }
+.statement p { max-width: 760px; margin: 0; font: clamp(26px, 3.4vw, 48px)/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -.04em; }
+.statement span { font-size: 9px; letter-spacing: .13em; white-space: nowrap; }
+
+.section { padding: 80px 0; }
+.intro-section { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 9%; }
+.section-copy { align-self: end; max-width: 500px; color: var(--ink-soft); font-size: 16px; }
+
+.athletes { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.athlete-card { min-width: 0; display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px; padding: 40px 5% 47px 0; }
+.athlete-card + .athlete-card { padding-left: 8%; padding-right: 0; border-left: 1px solid var(--line); }
+.athlete-image { background: #d7ddd3; align-self: stretch; }
+.athlete-image img { width: 100%; height: 100%; min-height: 390px; object-fit: cover; object-position: center; }
+.athlete-simon .athlete-image img { object-position: center; }
+.athlete-info h3 { margin: 16px 0 20px; font-size: clamp(35px, 3.6vw, 52px); }
+.athlete-info p { color: var(--ink-soft); font-size: 13px; }
+.athlete-info ul { list-style: none; margin: 24px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.athlete-info li { padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
+
+.achievements { display: grid; grid-template-columns: .9fr 1.1fr; gap: 7%; }
+.achievement-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+.achievement-grid article { padding: 23px 0 28px; border-top: 1px solid var(--line); }
+.achievement-grid span, .placement-grid span { font-size: 10px; letter-spacing: .11em; color: var(--ink-soft); }
+.achievement-grid h3 { margin: 14px 0 10px; font-size: 27px; }
+.achievement-grid p { color: var(--ink-soft); font-size: 12px; }
+
+.photo-band { display: grid; grid-template-columns: 1fr 1fr 1fr; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+.photo-band figure { position: relative; margin: 0; overflow: hidden; background: var(--ink); }
+.photo-band img { height: 32vw; min-height: 270px; width: 100%; object-fit: cover; transition: transform .45s ease; }
+.photo-band figure:nth-child(1) img { object-position: center; }
+.photo-band figure:nth-child(3) img { object-position: 62% center; }
+.photo-band figure:hover img { transform: scale(1.035); }
+.photo-band figcaption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgb(0 0 0 / .65)); border: 0; padding-top: 45px; }
+
+.goals { display: grid; grid-template-columns: .82fr 1.18fr; gap: 8%; }
+.goal-list article { display: grid; grid-template-columns: 55px 1fr; gap: 16px; padding: 24px 0 29px; border-top: 1px solid var(--line); }
+.goal-list article:last-child { border-bottom: 1px solid var(--line); }
+.goal-list span { font: 34px Georgia, 'Times New Roman', serif; }
+.goal-list h3 { margin: 2px 0 10px; font-size: 28px; }
+.goal-list p { max-width: 500px; margin: 0; color: var(--ink-soft); font-size: 13px; }
+
+.partner-section { display: grid; grid-template-columns: 1fr 1fr; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); background: var(--ink); color: var(--chalk); }
+.partner-copy { align-self: center; padding: 80px max(6vw, calc((100vw - 1440px) / 2 + 6vw)); padding-right: 8vw; }
+.partner-copy .eyebrow { color: var(--lime); }
+.partner-copy h2 { margin-bottom: 24px; }
+.partner-copy .lead { color: #d7e0d7; }
+.partner-image { min-height: 590px; }
+.partner-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.placements { display: grid; grid-template-columns: .85fr 1.15fr; gap: 8%; }
+.placement-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.placement-grid article { border-top: 1px solid var(--line); padding-top: 15px; }
+.placement-grid h3 { margin: 22px 0 8px; font-size: 23px; }
+.placement-grid p, .note { color: var(--ink-soft); font-size: 12px; }
+.note { grid-column: 2; margin: 23px 0 0; }
+
+.quote-section { padding: 110px 8%; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); background: var(--lime); text-align: center; }
+.quote-section p { margin: 0; font: clamp(30px, 4vw, 57px)/1.2 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
+
+.contact-section { display: grid; grid-template-columns: 1fr 1fr; padding: 85px 0; gap: 10%; }
+.contact-options { align-self: end; }
+.contact-options a { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0; border-top: 1px solid var(--line); text-decoration: none; font-size: 15px; }
+.contact-options a:last-child { border-bottom: 1px solid var(--line); }
+.contact-options span { color: var(--ink-soft); font-size: 12px; overflow-wrap: anywhere; text-align: right; }
+
+footer { display: flex; justify-content: space-between; gap: 15px; border-top: 1px solid var(--line); padding-top: 22px; padding-bottom: 24px; color: var(--ink-soft); font-size: 9px; letter-spacing: .08em; }
+footer a { color: var(--ink); }
+
+@media (max-width: 900px) {
+  .site-header { min-height: 78px; }
+  .menu-toggle { display: block; }
+  nav { display: none; position: fixed; z-index: 3; inset: 78px 0 0; padding: 28px 6%; flex-direction: column; align-items: flex-start; gap: 25px; background: var(--paper); }
+  nav.is-open { display: flex; }
+  nav a { font-size: 27px; }
+  .nav-cta { margin-top: 4px; font-size: 15px; }
+  .hero { grid-template-columns: 1fr; padding-top: 48px; }
+  .hero-image { max-width: 690px; }
+  .statement, .intro-section, .achievements, .goals, .placements, .contact-section { grid-template-columns: 1fr; }
+  .statement { display: block; padding-bottom: 65px; }
+  .statement span { display: block; margin-top: 23px; }
+  .athlete-card { grid-template-columns: .75fr 1.25fr; }
+  .athlete-image img { min-height: 330px; }
+  .partner-copy { padding: 65px 8%; }
+  .partner-image { min-height: 480px; }
+  .note { grid-column: auto; }
+}
+
+@media (max-width: 620px) {
+  .site-header, main, footer { padding-left: 5%; padding-right: 5%; }
+  .wordmark { font-size: 14px; }
+  .hero { gap: 35px; padding-bottom: 55px; }
+  .hero-image img { min-height: 310px; height: 78vw; }
+  .statement p { font-size: 29px; }
+  .section { padding: 58px 0; }
+  .athletes, .photo-band, .partner-section { grid-template-columns: 1fr; }
+  .athlete-card, .athlete-card + .athlete-card { grid-template-columns: 105px 1fr; padding: 30px 0; border-left: 0; }
+  .athlete-card + .athlete-card { border-top: 1px solid var(--line); }
+  .athlete-image img { min-height: 270px; }
+  .athlete-info h3 { font-size: 39px; }
+  .achievement-grid { gap: 0 18px; }
+  .achievement-grid h3 { font-size: 23px; }
+  .photo-band img { height: 84vw; }
+  .photo-band figure:nth-child(2) { display: none; }
+  .goal-list article { grid-template-columns: 43px 1fr; }
+  .goal-list h3 { font-size: 24px; }
+  .partner-copy { padding: 58px 5%; }
+  .partner-image { min-height: 370px; }
+  .placement-grid { grid-template-columns: 1fr; gap: 10px; }
+  .quote-section { padding: 78px 6%; }
+  .contact-options a { display: block; }
+  .contact-options span { display: block; margin-top: 5px; text-align: left; }
+  footer { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
